@@ -224,6 +224,17 @@ section {
     margin-top: 4rem;
 }
 
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.single-img-mini {
+    width: 30.6rem;
+    height: 21rem;
+}
+
 .text-title {
     font-family: "EB Garamond", serif;
     font-weight: 800;
