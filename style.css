@@ -525,7 +525,7 @@ section {
     line-height: 2.24rem;
     border-radius: 5rem;
     padding: 1.5rem 3rem 1.4rem 3rem;
-    background: rgba(5, 176, 147, 1);
+    background: var(--color-green-light);
 }
 
 .single-page .single {
@@ -537,7 +537,7 @@ section {
 }
 
 .single-page .text-title {
-    font-family: "EB Garamond", serif;
+    font-family: var(--font-secondary), serif;
     font-weight: 800;
     font-size: 2.4rem;
     line-height: 140%;
@@ -545,7 +545,7 @@ section {
 }
 
 .single-page .text-normal {
-    font-family: "Fira Sans", sans-serif;
+    font-family: var(--font-primary), sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 140%;
@@ -553,7 +553,7 @@ section {
 
 .single-page .title {
     text-align: center;
-    font-family: "EB Garamond", serif;
+    font-family: var(--font-secondary), serif;
     font-weight: 700;
     font-size: 4.8rem;
     line-height: 140%;
@@ -576,7 +576,7 @@ section {
 }
 
 .single-page .content-title {
-    font-family: "EB Garamond", serif;
+    font-family: var(--font-secondary), serif;
     font-weight: 800;
     font-size: 2.4rem;
     line-height: 140%;
@@ -599,7 +599,7 @@ section {
 .single-page .buy-btn {
     width: 17.5rem;
     height: 5.1rem;
-    background-color: #05B093;
+    background-color: var(--color-green-light);
     border-radius: 5rem;
     border: none;
     text-align: center;
