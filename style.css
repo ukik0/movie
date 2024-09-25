@@ -159,6 +159,38 @@ section {
     }
 }
 
+.section__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+
+.section__heading-title {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 140%;
+}
+
+.section__heading-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.section__heading-subtitle img {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.section__heading-subtitle span {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 140%;
+}
+
 .header {
     background: var(--color-black);
     padding: 3.2rem;
@@ -263,38 +295,6 @@ section {
 
 .announcements {
     margin-bottom: 15rem;
-}
-
-.announcements__heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10rem;
-}
-
-.announcements__title {
-    font-family: var(--font-secondary);
-    font-weight: 700;
-    font-size: 4.8rem;
-    line-height: 140%;
-}
-
-.announcements__heading-subtitle {
-    display: flex;
-    align-items: center;
-    gap: 3.2rem;
-}
-
-.announcements__heading-subtitle img {
-    width: 3.2rem;
-    height: 3.2rem;
-}
-
-.announcements__heading-subtitle span {
-    font-family: var(--font-secondary);
-    font-weight: 700;
-    font-size: 2.4rem;
-    line-height: 140%;
 }
 
 .announcements__list {
@@ -423,4 +423,107 @@ section {
     line-height: 140%;
     color: var(--color-white);
     opacity: .5;
+}
+
+.poster__page .title {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 4.8rem;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+.poster__page .posters__list {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+}
+
+.poster__page .item {
+    padding: 3.2rem 6rem;
+    width: 129.6rem;
+    background: #1919190D;
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 6.233rem;
+}
+
+.poster__page .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    color: rgba(25, 25, 25, 0.75);
+}
+
+.poster__page .number__date {
+    font-size: 6.4rem;
+    line-height: 8.96rem;
+}
+
+.poster__page .month {
+    font-size: 3.2rem;
+    line-height: 4.48rem;
+}
+
+.poster__page .item__image {
+    width: 32rem;
+    height: 24rem;
+    border-radius: 1.2rem;
+}
+
+.poster__page .posters__info {
+    max-width: 41.5rem;
+}
+
+.poster__page .item__title {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.48rem;
+    margin-bottom: 1.6rem;
+}
+
+.poster__page .description {
+    font-size: 1.6rem;
+    line-height: 2.24rem;
+    margin-bottom: 4rem;
+    color: rgba(25, 25, 25, 0.75);
+
+}
+
+.poster__page .poster__options {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.poster__page .poster__options li {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    line-height: 2.24rem;
+    font-size: 1.6rem;
+    color: rgba(25, 25, 25, 0.75);
+}
+
+.poster__page .poster__options img {
+    width: 3.2rem;
+    aspect-ratio: 1/1;
+}
+
+.poster__page .buy__button {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--color-white);
+    text-align: center;
+    line-height: 2.24rem;
+    border-radius: 5rem;
+    padding: 1.5rem 3rem 1.4rem 3rem;
+    background: rgba(5, 176, 147, 1);
 }
