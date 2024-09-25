@@ -527,3 +527,93 @@ section {
     padding: 1.5rem 3rem 1.4rem 3rem;
     background: rgba(5, 176, 147, 1);
 }
+
+.single-page .single {
+    width: 100%;
+}
+
+.single-page .text-margin {
+    margin-bottom: 1.6rem;
+}
+
+.single-page .text-title {
+    font-family: "EB Garamond", serif;
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 140%;
+    margin-bottom: 2.4rem;
+}
+
+.single-page .text-normal {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.single-page .title {
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 140%;
+    margin-bottom: 10rem;
+}
+
+.single-page .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-page .single-img {
+    width: 52.6rem;
+    height: 74.2rem;
+}
+
+.single-page .right-block {
+    width: 63.6rem;
+}
+
+.single-page .content-title {
+    font-family: "EB Garamond", serif;
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 140%;
+    margin-bottom: 2.4rem;
+}
+
+.single-page .description {
+    margin-top: 4rem;
+}
+
+.single-page .program-title {
+    margin-top: 4rem;
+    margin-bottom: 2.4rem;
+}
+
+.single-page .buy-title {
+    margin-top: 4rem;
+}
+
+.single-page .buy-btn {
+    width: 17.5rem;
+    height: 5.1rem;
+    background-color: #05B093;
+    border-radius: 5rem;
+    border: none;
+    text-align: center;
+    color: white;
+    margin-top: 4rem;
+}
+
+.single-page .images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.single-page .single-img-mini {
+    width: 30.6rem;
+    height: 21rem;
+}
