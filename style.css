@@ -1,6 +1,10 @@
 :root {
-    --color-text: #191919;
+    --color-black: #191919;
     --color-white: #fff;
+    --color-green-light: #05B093;
+    --color-background-grey: rgba(25, 25, 25, 0.05);;
+    --font-primary: "Fira Sans";
+    --font-secondary: "EB Garamond";
 }
 
 *,
@@ -12,7 +16,7 @@
 html {
     margin: 0;
     padding: 0;
-    font-family: "Fira Sans", sans-serif;
+    font-family: var(--font-primary), sans-serif;
     font-size: 0.5208335vw;
     font-style: normal;
     font-weight: normal;
@@ -155,15 +159,384 @@ section {
     }
 }
 
-.single {
-    width: 100%;
+.section__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem;
 }
 
-.text-margin {
+.section__heading-title {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 140%;
+}
+
+.section__heading-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.section__heading-subtitle img {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.section__heading-subtitle span {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 140%;
+}
+
+.header {
+    background: var(--color-black);
+    padding: 3.2rem;
+    margin-bottom: 6rem;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 33rem;
+    height: 4rem;
+}
+
+.header__logo img {
+    height: 100%;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+}
+
+.header__item {
+    position: relative;
+}
+
+.header__item:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    right: -2.6rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: .6rem;
+    height: .6rem;
+    background-color: var(--color-white);
+}
+
+.header__item a {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: var(--color-white);
+}
+
+.hero {
+    margin-bottom: 18.4rem;
+}
+
+.hero__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.4rem;
+}
+
+.hero__banner {
+    max-width: 85.6rem;
+    width: 100%;
+    height: 50rem;
+}
+
+.hero__banner img {
+    height: 100%;
+}
+
+.hero__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.hero__item a {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 1.2rem 1.6rem;
+    border-radius: .8rem;
+    background: var(--color-background-grey);
+}
+
+.hero__item-icon {
+    border-radius: .8rem;
+    width: 8rem;
+    height: 8rem;
+}
+
+.hero__item-icon img {
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.hero__item span {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 140%;
+}
+
+.announcements {
+    margin-bottom: 15rem;
+}
+
+.announcements__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.4rem;
+}
+
+.announcements__item {
+    display: flex;
+    align-items: center;
+    gap: 2.7rem;
+}
+
+.announcements__item-date {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1.2rem;
+    background: var(--color-green-light);
+}
+
+.announcements__item-date strong {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 140%;
+    color: var(--color-white);
+}
+
+.announcements__item-date sup {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: var(--color-white);
+}
+
+.announcements__item-title {
+    font-family: var(--font-secondary);
+    font-weight: 800;
+    font-size: 1.4rem;
+    line-height: 140%;
+}
+
+.footer {
+    background: var(--color-black);
+    padding-top: 6rem;
+    padding-bottom: 3.2rem;
+}
+
+.footer__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 6rem;
+    border-bottom: .1rem solid var(--color-white);
+    margin-bottom: 3.2rem;
+}
+
+.footer__logo {
+    width: 33rem;
+    height: 4rem;
+}
+
+.footer__logo img {
+    height: 100%;
+}
+
+.footer__blocks {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.4rem;
+}
+
+.footer__block {
+    width: 41.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    align-items: flex-start;
+}
+
+.footer__block.--events  .footer__links-list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2.4rem;
+}
+
+.footer__block-title {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 140%;
+    color: var(--color-white);
+}
+
+.footer__links-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
+}
+
+.footer__links-item {
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: var(--color-white);
+}
+
+.footer__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__copyright span {
+    display: block;
+    width: fit-content;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: var(--color-white);
+    opacity: .5;
+}
+
+.poster__page .title {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 4.8rem;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+    text-align: center;
+}
+
+.poster__page .posters__list {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+}
+
+.poster__page .item {
+    padding: 3.2rem 6rem;
+    width: 129.6rem;
+    background: #1919190D;
+    border-radius: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 6.233rem;
+}
+
+.poster__page .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    color: rgba(25, 25, 25, 0.75);
+}
+
+.poster__page .number__date {
+    font-size: 6.4rem;
+    line-height: 8.96rem;
+}
+
+.poster__page .month {
+    font-size: 3.2rem;
+    line-height: 4.48rem;
+}
+
+.poster__page .item__image {
+    width: 32rem;
+    height: 24rem;
+    border-radius: 1.2rem;
+}
+
+.poster__page .posters__info {
+    max-width: 41.5rem;
+}
+
+.poster__page .item__title {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.48rem;
     margin-bottom: 1.6rem;
 }
 
-.text-title {
+.poster__page .description {
+    font-size: 1.6rem;
+    line-height: 2.24rem;
+    margin-bottom: 4rem;
+    color: rgba(25, 25, 25, 0.75);
+
+}
+
+.poster__page .poster__options {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.poster__page .poster__options li {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    line-height: 2.24rem;
+    font-size: 1.6rem;
+    color: rgba(25, 25, 25, 0.75);
+}
+
+.poster__page .poster__options img {
+    width: 3.2rem;
+    aspect-ratio: 1/1;
+}
+
+.poster__page .buy__button {
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: var(--color-white);
+    text-align: center;
+    line-height: 2.24rem;
+    border-radius: 5rem;
+    padding: 1.5rem 3rem 1.4rem 3rem;
+    background: rgba(5, 176, 147, 1);
+}
+
+.single-page .single {
+    width: 100%;
+}
+
+.single-page .text-margin {
+    margin-bottom: 1.6rem;
+}
+
+.single-page .text-title {
     font-family: "EB Garamond", serif;
     font-weight: 800;
     font-size: 2.4rem;
@@ -171,14 +544,14 @@ section {
     margin-bottom: 2.4rem;
 }
 
-.text-normal {
+.single-page .text-normal {
     font-family: "Fira Sans", sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 140%;
 }
 
-.title {
+.single-page .title {
     text-align: center;
     font-family: "EB Garamond", serif;
     font-weight: 700;
@@ -187,22 +560,22 @@ section {
     margin-bottom: 10rem;
 }
 
-.content {
+.single-page .content {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.single-img {
+.single-page .single-img {
     width: 52.6rem;
     height: 74.2rem;
 }
 
-.right-block {
+.single-page .right-block {
     width: 63.6rem;
 }
 
-.content-title {
+.single-page .content-title {
     font-family: "EB Garamond", serif;
     font-weight: 800;
     font-size: 2.4rem;
@@ -210,20 +583,20 @@ section {
     margin-bottom: 2.4rem;
 }
 
-.description {
+.single-page .description {
     margin-top: 4rem;
 }
 
-.program-title {
+.single-page .program-title {
     margin-top: 4rem;
     margin-bottom: 2.4rem;
 }
 
-.buy-title {
+.single-page .buy-title {
     margin-top: 4rem;
 }
 
-.buy-btn {
+.single-page .buy-btn {
     width: 17.5rem;
     height: 5.1rem;
     background-color: #05B093;
@@ -234,13 +607,13 @@ section {
     margin-top: 4rem;
 }
 
-.images {
+.single-page .images {
     display: flex;
     justify-content: space-between;
     margin-top: 4rem;
 }
 
-.single-img-mini {
+.single-page .single-img-mini {
     width: 30.6rem;
     height: 21rem;
 }
