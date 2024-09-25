@@ -159,12 +159,32 @@ section {
     width: 100%;
 }
 
+.text-margin {
+    margin-bottom: 1.6rem;
+}
+
+.text-title {
+    font-family: "EB Garamond", serif;
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 140%;
+    margin-bottom: 2.4rem;
+}
+
+.text-normal {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 140%;
+}
+
 .title {
     text-align: center;
     font-family: "EB Garamond", serif;
     font-weight: 700;
     font-size: 4.8rem;
     line-height: 140%;
+    margin-bottom: 10rem;
 }
 
 .content {
@@ -175,6 +195,7 @@ section {
 
 .single-img {
     width: 52.6rem;
+    height: 74.2rem;
 }
 
 .right-block {
@@ -187,17 +208,6 @@ section {
     font-size: 2.4rem;
     line-height: 140%;
     margin-bottom: 2.4rem;
-}
-
-.actors-text {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 140%;
-}
-
-.actors-text-margin {
-    margin-bottom: 1.6rem;
 }
 
 .description {
@@ -233,19 +243,4 @@ section {
 .single-img-mini {
     width: 30.6rem;
     height: 21rem;
-}
-
-.text-title {
-    font-family: "EB Garamond", serif;
-    font-weight: 800;
-    font-size: 2.4rem;
-    line-height: 140%;
-    margin-bottom: 2.4rem;
-}
-
-.text-normal {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 140%;
 }
