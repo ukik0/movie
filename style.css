@@ -2,6 +2,7 @@
     --color-black: #191919;
     --color-white: #fff;
     --color-green-light: #05B093;
+    --color-background-grey: rgba(25, 25, 25, 0.05);;
     --font-primary: "Fira Sans";
     --font-secondary: "EB Garamond";
 }
@@ -205,6 +206,59 @@ section {
     font-size: 1.6rem;
     line-height: 140%;
     color: var(--color-white);
+}
+
+.hero {
+    margin-bottom: 18.4rem;
+}
+
+.hero__content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.4rem;
+}
+
+.hero__banner {
+    max-width: 85.6rem;
+    width: 100%;
+    height: 50rem;
+}
+
+.hero__banner img {
+    height: 100%;
+}
+
+.hero__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.hero__item a {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+    padding: 1.2rem 1.6rem;
+    border-radius: 8px;
+    background: var(--color-background-grey);
+}
+
+.hero__item-icon {
+    border-radius: 8px;
+    width: 8rem;
+    height: 8rem;
+}
+
+.hero__item-icon img {
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.hero__item span {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 140%;
 }
 
 .footer {
