@@ -2,6 +2,8 @@
     --color-black: #191919;
     --color-white: #fff;
     --color-green-light: #05B093;
+    --font-primary: "Fira Sans";
+    --font-secondary: "EB Garamond";
 }
 
 *,
@@ -13,7 +15,7 @@
 html {
     margin: 0;
     padding: 0;
-    font-family: "Fira Sans", sans-serif;
+    font-family: var(--font-primary), sans-serif;
     font-size: 0.5208335vw;
     font-style: normal;
     font-weight: normal;
@@ -159,6 +161,7 @@ section {
 .header {
     background: var(--color-black);
     padding: 3.2rem;
+    margin-bottom: 6rem;
 }
 
 .header__content {
@@ -202,4 +205,85 @@ section {
     font-size: 1.6rem;
     line-height: 140%;
     color: var(--color-white);
+}
+
+.footer {
+    background: var(--color-black);
+    padding-top: 6rem;
+    padding-bottom: 3.2rem;
+}
+
+.footer__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 6rem;
+    border-bottom: .1rem solid var(--color-white);
+    margin-bottom: 3.2rem;
+}
+
+.footer__logo {
+    width: 33rem;
+    height: 4rem;
+}
+
+.footer__logo img {
+    height: 100%;
+}
+
+.footer__blocks {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.4rem;
+}
+
+.footer__block {
+    width: 41.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    align-items: flex-start;
+}
+
+.footer__block.--events  .footer__links-list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2.4rem;
+}
+
+.footer__block-title {
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 140%;
+    color: var(--color-white);
+}
+
+.footer__links-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.4rem;
+}
+
+.footer__links-item {
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: var(--color-white);
+}
+
+.footer__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__copyright span {
+    display: block;
+    width: fit-content;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: var(--color-white);
+    opacity: .5;
 }
