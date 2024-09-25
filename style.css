@@ -172,3 +172,7 @@ section {
     display: flex;
     justify-content: space-between;
 }
+
+.single-img {
+    width: 52.6rem;
+}
