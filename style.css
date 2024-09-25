@@ -26,8 +26,8 @@ body {
     font-style: normal;
     font-weight: normal;
     line-height: 1.2;
-    color: $txtColor;
-    background-color: $bgColor;
+    color: var(--color-text);
+    background-color: var(--color-white);
     -webkit-animation: bugfix infinite 1s;
 }
 
@@ -121,7 +121,7 @@ section {
 }
 
 .container {
-    width: 141rem;
+    width: 130rem;
     margin: 0 auto;
 }
 
