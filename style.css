@@ -199,3 +199,14 @@ section {
 .actors-text-margin {
     margin-bottom: 1.6rem;
 }
+
+.description {
+    margin-top: 4rem;
+}
+
+.text-normal {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 140%;
+}
