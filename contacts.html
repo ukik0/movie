@@ -11,11 +11,10 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
-
 <header class="header">
     <div class="container">
         <div class="header__content">
@@ -76,166 +75,79 @@
         text-align: center;
     }
 
-    .posters__list {
-        margin: auto;
+    .contacts__info {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        gap: 8rem;
+        gap: 13.4rem;
+        margin-bottom: 10rem;
     }
 
-    .item {
-        padding: 3.2rem 6rem;
-        width: 129.6rem;
-        background: #1919190D;
-        border-radius: 1.6rem;
-        display: flex;
-        align-items: center;
-        gap: 6.233rem;
-    }
-
-    .date {
+    .side__info {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        gap: 4rem;
+    }
+
+    .side__info > div {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+
+    .title__info {
         font-family: Garamond, serif;
         font-weight: 700;
-        color: rgba(25, 25, 25, 0.75);
+        font-size: 2.4rem;
+        line-height: 3.36rem;
     }
 
-    .number__date {
-        font-size: 6.4rem;
-        line-height: 8.96rem;
+    .text__info {
+        font-size: 1.6rem;
+        line-height: 2.24rem;
     }
 
-    .month {
-        font-size: 3.2rem;
-        line-height: 4.48rem;
-    }
-
-    .item__image {
-        width: 32rem;
-        height: 24rem;
+    .map {
+        width: 85.6rem;
+        height: 44.1rem;
         border-radius: 1.2rem;
-    }
-
-    .posters__info {
-        max-width: 41.5rem;
-    }
-
-    .item__title {
-        font-family: Garamond, serif;
-        font-weight: 700;
-        font-size: 3.2rem;
-        line-height: 4.48rem;
-        margin-bottom: 1.6rem;
-    }
-
-    .description {
-        font-size: 1.6rem;
-        line-height: 2.24rem;
-        margin-bottom: 4rem;
-        color: rgba(25, 25, 25, 0.75);
-
-    }
-
-    .poster__options {
-        display: flex;
-        align-items: center;
-        gap: 3rem;
-    }
-
-    .poster__options li {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        line-height: 2.24rem;
-        font-size: 1.6rem;
-        color: rgba(25, 25, 25, 0.75);
-    }
-
-    .poster__options img {
-        width: 3.2rem;
-        aspect-ratio: 1/1;
-    }
-
-    .buy__button {
-        font-weight: 600;
-        font-size: 1.6rem;
-        color: white;
-        text-align: center;
-        line-height: 2.24rem;
-        border-radius: 5rem;
-        padding: 1.5rem 3rem 1.4rem 3rem;
-        background: rgba(5, 176, 147, 1);
     }
 </style>
 <main>
-    <h1 class="title">Афиша</h1>
-    <div class="posters__list">
-        <div class="item">
-            <p class="date">
-                <span class="number__date">3</span>
-                <span class="month">июня</span>
-            </p>
-            <img src="images/img.png" class="item__image">
-            <div class="posters__info">
-                <p class="item__title">Антонио Вивальди. Времена года</p>
-                <p class="description">Посвящение Фрэнку Синатре.</p>
-                <ul class="poster__options">
-                    <li><img src="images/style.svg"> Джаз</li>
-                    <li><img src="images/time.svg"> 19:00</li>
-                    <li><img src="images/age.svg"> 6+</li>
-                </ul>
+    <h1 class="title">Контакты</h1>
+    <div class="contacts__info">
+        <div class="side__info">
+            <div>
+                <p class="title__info">Адрес:</p>
+                <p class="text__info">Россия, 191025, г. Санкт-Петербург, Невский пр., д. 1</p>
             </div>
-            <a class="buy__button" href="/single_page.html">Заказать билет</a>
+            <div>
+                <p class="title__info">Режим работы кассы Дворца:</p>
+                <p class="text__info" style="
+        line-height: 3.74rem;">
+                    понедельник: выходной<br>
+                    вторник-суббота: с 11.00 до 19.00 час.<br>
+                    воскресенье: с 11.00 до 17.00 час.<br>
+                    перерыв: с 14.00 до 14.30 час.<br>
+                </p>
+            </div>
         </div>
-        <div class="item">
-            <p class="date">
-                <span class="number__date">30</span>
-                <span class="month">июня</span>
-            </p>
-            <img src="images/img.png" class="item__image">
-            <div class="posters__info">
-                <p class="item__title">Опера VS Оперетта</p>
-                <p class="description">Санкт-Петербургский камерный оркестр Olympic Orchestra</p>
-                <ul class="poster__options">
-                    <li><img src="images/style.svg"> Классика</li>
-                </ul>
+        <div class="side__info">
+            <div>
+                <p class="title__info">Билетная касса, заказ экскурсий::</p>
+                <p class="text__info">(812) 123-45-67</p>
             </div>
-            <a class="buy__button" href="/single_page.html">Заказать билет</a>
-        </div>
-        <div class="item">
-            <p class="date">
-                <span class="number__date">30</span>
-                <span class="month">июня</span>
-            </p>
-            <img src="images/img.png" class="item__image">
-            <div class="posters__info">
-                <p class="item__title">Опера VS Оперетта</p>
-                <p class="description">Санкт-Петербургский камерный оркестр Olympic Orchestra</p>
-                <ul class="poster__options">
-                    <li><img src="images/style.svg"> Классика</li>
-                </ul>
+            <div>
+                <p class="title__info">Аренда концертного/конференц зала:</p>
+                <p class="text__info">(812) 123-45-67</p>
             </div>
-            <a class="buy__button" href="/single_page.html">Заказать билет</a>
-        </div>
-        <div class="item">
-            <p class="date">
-                <span class="number__date">30</span>
-                <span class="month">июня</span>
-            </p>
-            <img src="images/img.png" class="item__image">
-            <div class="posters__info">
-                <p class="item__title">Опера VS Оперетта</p>
-                <p class="description">Санкт-Петербургский камерный оркестр Olympic Orchestra</p>
-                <ul class="poster__options">
-                    <li><img src="images/style.svg"> Классика</li>
-                </ul>
+            <div>
+                <p class="title__info">ВКонтакте:</p>
+                <p class="text__info">vk.com/nevskiy1</p>
             </div>
-            <a class="buy__button" href="/single_page.html">Заказать билет</a>
         </div>
     </div>
+    <img src="images/map.png" class="map">
+
 </main>
 
 <footer class="footer">
