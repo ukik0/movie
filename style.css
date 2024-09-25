@@ -209,6 +209,21 @@ section {
     margin-bottom: 2.4rem;
 }
 
+.buy-title {
+    margin-top: 4rem;
+}
+
+.buy-btn {
+    width: 17.5rem;
+    height: 5.1rem;
+    background-color: #05B093;
+    border-radius: 5rem;
+    border: none;
+    text-align: center;
+    color: white;
+    margin-top: 4rem;
+}
+
 .text-title {
     font-family: "EB Garamond", serif;
     font-weight: 800;
